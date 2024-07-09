@@ -1,0 +1,18 @@
+ReactDOM.createRoot() - create Root method
+
+Virtual DOM - compare main dom and current dom and update the changes in Virtual dom tree
+Browser - update whole page (Repaint) - reload
+
+Update = 1 -> 2 -> 3 inspite of this we can also do 1 -> 3 to avoid unnecessary updates
+
+Git Hub Repository = Point to be noted
+-React Fiber Architecture - 
+React Fiber is an ongoing reimplementation of React's core algorithm. It is the culmination of over two years of research by the React team.
+The goal of React Fiber is to increase its suitability for areas like animation, layout, and gestures. Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
+Other key features include the ability to pause, abort, or reuse work as new updates come in; the ability to assign priority to different types of updates; and new concurrency primitives.
+
+    @ Ongoing Virtual dom ko update krne wali algorithm ko React Fiber
+    @ animation, layout, and gestures hit hote thy first 
+        update second update third update x
+        All combined Update
+    @ 
