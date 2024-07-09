@@ -12,7 +12,7 @@ function App() {
     chaiCounter(counter + 1)
   }
 
-  const removeValue = () => {
+  const removeValue = () => {c
     chaiCounter(counter - 1)
   }
   return (
