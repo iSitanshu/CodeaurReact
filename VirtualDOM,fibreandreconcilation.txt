@@ -15,4 +15,3 @@ Other key features include the ability to pause, abort, or reuse work as new upd
     @ animation, layout, and gestures hit hote thy first 
         update second update third update x
         All combined Update
-    @ 
