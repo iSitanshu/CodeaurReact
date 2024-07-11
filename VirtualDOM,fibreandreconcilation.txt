@@ -1,4 +1,4 @@
-ReactDOM.createRoot() - create Root method
++ReactDOM.createRoot() - create Root method
 
 Virtual DOM - compare main dom and current dom and update the changes in Virtual dom tree
 Browser - update whole page (Repaint) - reload
