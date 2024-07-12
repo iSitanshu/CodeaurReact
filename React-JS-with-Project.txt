@@ -1,0 +1,20 @@
+Roadmap
+    1. Create React App
+    2. Components - 
+        Function
+        Class
+    3. JSX
+    4. Props and State
+    5. useState and useEffect React Hooks
+    6. Component Lifecycle method
+    7. Conditional rendering
+    8. List & Keys
+    9. Basic form Handling
+    10. React Project Structure
+    11. Routing React Router
+    12. Programming Navigation
+    13. Set-up JSON server
+    14. API call (Axion)
+    15. React CRUD Operation
+    16. React Search Filter
+    17. React Hooks
