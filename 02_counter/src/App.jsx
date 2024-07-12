@@ -1,28 +1,26 @@
-import { useState } from 'react' //for Hooks
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [length, setLength] = useState(0)
 
-  let [counter , chaiCounter] = useState(15) //Hooks
-
-  // let counter = 15;
-  const addValue = () => {
-    chaiCounter(counter + 1)
+  const handleIncrease = () => {
+    if(length<5) setLength(length+1);
   }
 
-  const removeValue = () => {
-    chaiCounter(counter - 1)
+  const handleDecrease = () => {
+    if(length>0) setLength(length-1);
   }
+
   return (
     <>
-      <h2>Chai aur react</h2>
-      <h3>Counter value : {counter}</h3>
-      <button onClick={addValue}>Add Value {counter}</button>
-      <br />
-      <button onClick={removeValue}>Remove Value {counter}</button>
-      <p>Footer : {counter}</p>
+      <h1 className='text-white text-4xl text-center'>Counter {length}</h1>
+      <button 
+      onClick={handleIncrease}
+      className='text-white border text-4xl flex justify-center'>Increase {length}</button>
+      <button 
+      onClick={handleDecrease}
+      className='text-white border text-4xl text-center'>Decrease {length}</button>
     </>
   )
 }
