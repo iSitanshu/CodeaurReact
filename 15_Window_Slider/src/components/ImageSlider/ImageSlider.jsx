@@ -26,7 +26,6 @@ const ImageSlider = () => {
     const prevSlide = () => {
         setIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
     };
-
     return (
         <div className="slider">
             <div className="slides" style={{ transform: `translateX(${-index * 100}%)`, transition: 'transform 0.5s ease-in-out' }}>
