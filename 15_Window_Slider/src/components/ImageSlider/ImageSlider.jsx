@@ -16,6 +16,7 @@ const ImageSlider = () => {
         }, 3000); // Change slide every 3 seconds
 
         return () => clearInterval(interval); // Cleanup on unmount
+        
     }, [totalSlides]);
 
     const nextSlide = () => {
