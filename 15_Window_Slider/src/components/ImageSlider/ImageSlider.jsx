@@ -11,6 +11,7 @@ const ImageSlider = () => {
     const totalSlides = images.length;
 
     useEffect(() => {
+
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % totalSlides);
         }, 3000); // Change slide every 3 seconds
@@ -36,8 +37,8 @@ const ImageSlider = () => {
                 ))}
             </div>
             <div className="navigation">
-                <button className="button" onClick={prevSlide}>❮</button>
-                <button className="button" onClick={nextSlide}>❯</button>
+                <button className="button" onClick={prevSlide}>❮</button>//on clicking prev counter will reduce to the left 
+                <button className="button" onClick={nextSlide}>❯</button>//on clicking prev counter will reduce to the right
             </div>
         </div>
     );
