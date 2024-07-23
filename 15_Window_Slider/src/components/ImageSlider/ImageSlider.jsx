@@ -17,7 +17,7 @@ const ImageSlider = () => {
         }, 3000); // Change slide every 3 seconds
 
         return () => clearInterval(interval); // Cleanup on unmount
-        
+
     }, [totalSlides]);
 
     const nextSlide = () => {
@@ -27,6 +27,8 @@ const ImageSlider = () => {
     const prevSlide = () => {
         setIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
     };
+
+    //return    
     return (
         <div className="slider">
             <div className="slides" style={{ transform: `translateX(${-index * 100}%)`, transition: 'transform 0.5s ease-in-out' }}>
