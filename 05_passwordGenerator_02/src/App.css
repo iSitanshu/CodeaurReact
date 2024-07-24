@@ -2,12 +2,32 @@
     color: white;
     text-align: center;
 }
-.main{
+.top{
     border: 1px solid white;
-
 }
 input{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+button{
+    width: 10%;
+    background-color: yellow;
+    border: 3px solid red;
+}
+.main,.condition{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+.num,.char,.rtt{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
