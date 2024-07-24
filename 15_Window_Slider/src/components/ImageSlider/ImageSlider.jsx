@@ -23,7 +23,6 @@ const ImageSlider = () => {
     const nextSlide = () => {
         setIndex((prevIndex) => (prevIndex + 1) % totalSlides);
     };
-
     const prevSlide = () => {
         setIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
     };
