@@ -10,7 +10,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='/:slug' element={<Detail />} />
+          <Route path='/:slug' element={<Detail />} /> {/* anyother route to the detail page */}
         </Route>
       </Routes>
     </BrowserRouter>
