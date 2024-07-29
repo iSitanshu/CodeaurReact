@@ -2,7 +2,7 @@ import './App.css'
 import Layout from './components/Layout'
 import Home from './Pages/Home'
 import Detail from './Pages/Detail'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 
 export default function App() {
   return (
