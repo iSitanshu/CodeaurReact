@@ -1,18 +1,20 @@
-import './App.css'
+import React from 'react'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Layout from './components/Layout'
-import Home from './Pages/Home'
-import Detail from './Pages/Detail'
-import { BrowserRouter, Routes, Route } from 'react-router-dom' 
+import Home from './Page/Home'
+import Detail from './Page/Detail'
 
-export default function App() {
+const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='/:slug' element={<Detail />} /> {/* anyother route to the detail page */}
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='Detail' element={<Detail />} />
+      </Route>
+    </Routes>
     </BrowserRouter>
   )
 }
+
+export default App
