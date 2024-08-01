@@ -47,6 +47,7 @@ function App() {
                                 currencyOptions={options}
                                 onCurrencyChange={(currency)=>setAmount(amount)}
                                 selectCurrency={from}
+                                onAmountChange={(amount)=>setAmount(amount)}
                             />
                         </div>
                         <div className="relative w-full h-0.5">
@@ -66,7 +67,6 @@ function App() {
                                 onCurrencyChange={(currency)=>setTimeout(currency)}
                                 amountDisable
                                 selectCurrency={from}
-                                
                             />
                         </div>
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
