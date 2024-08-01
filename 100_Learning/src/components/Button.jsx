@@ -6,7 +6,7 @@ const Button = ({
 }) => {
     return (
         <>
-            <div className={`${className}`}>Button 2</div>
+            <div className={`${className}`}><Button>Button 2</Button></div>
             <h1 className={`${className}`}>{text}</h1>
         </>
     )
