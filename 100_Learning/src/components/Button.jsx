@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({
+    className=''
+}) => {
   return (
-    <div>Button</div>
+    <div className={`${className}`}>Button 2</div>
   )
 }
 
