@@ -1,11 +1,15 @@
 import React from 'react'
 
 const Button = ({
-    className=''
+    className = '',
+    text
 }) => {
-  return (
-    <div className={`${className}`}>Button 2</div>
-  )
+    return (
+        <>
+            <div className={`${className}`}>Button 2</div>
+            <h1 className={`${className}`}>{text}</h1>
+        </>
+    )
 }
 
-export default Button
+export default Button;
