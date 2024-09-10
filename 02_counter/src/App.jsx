@@ -6,6 +6,7 @@ function App() {
 
   const handleIncrease = () => {
     if(length<5) setLength(length+1);
+    setLength(length+1)
   }
 
   const handleDecrease = () => {
